@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,9 +30,11 @@
             flex-direction: column;
         }
 
+        /* Navigation */
+
         header {
             background-color: white;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
             position: fixed;
             width: 100%;
             top: 0;
@@ -75,17 +79,14 @@
             color: var(--accent-color);
         }
 
-        nav {
-            border: 2px solid red;
-        }
-
-        /* PAGE CONTENT */
+        /* Page Content */
 
         .page-content {
             max-width: 900px;
             margin: 0 auto;
             padding: 8rem 2rem 4rem;
             flex: 1;
+            width: 100%;
         }
 
         .page-content h1 {
@@ -102,11 +103,15 @@
             text-decoration: none;
         }
 
+        .github-link:hover {
+            text-decoration: underline;
+        }
+
         .project-card {
             background: white;
             padding: 2rem;
             border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
             margin-bottom: 2rem;
         }
 
@@ -134,45 +139,55 @@
         }
     </style>
 </head>
-<html lang="en">
 
+<body>
 
-  <body>
     <header>
         <nav>
             <a href="index.html" class="logo">MayaBabu<span>.dev</span></a>
+
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="pastprojects.html">About Me</a></li>
-                <li><a href="pastprojects.html">Resume</a></li>
-                <li><a href="pastprojects.html" class = "active">Previous Projects</a></li>
-                <li><a href="pastprojects.html">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="pastprojects.html" class="active">Previous Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class = "page-content">
+    <main class="page-content">
 
-    
-    <h1>Past Projects</h1>
-    
+        <h1>Past Projects</h1>
 
-    <a href="https://github.com/bluedrank09">GitHub Profile</a>
+        <a href="https://github.com/bluedrank09" class="github-link">
+            View My GitHub Profile →
+        </a>
 
-    <!--Past project one : Movies and Actors AI Bot-->
-    <div class = "project-card">
-      <h2>Movies and Actors AI Bot</h2>
-      <p>An AI-powered information bot for movies and actors.</p>
-      <p>Users input a movie or actor, then receive detailed information about their pick.</p>
-      <p>The bot uses an API call to OpenAI to fetch their requested information from three movie websites.</p>
-    </div>
+        <div class="project-card">
+            <h2>Movies and Actors AI Bot</h2>
+
+            <p>
+                An AI-powered information bot for movies and actors.
+            </p>
+
+            <p>
+                Users input a movie or actor, then receive detailed
+                information about their pick.
+            </p>
+
+            <p>
+                The bot uses an API call to OpenAI to fetch requested
+                information from multiple movie websites.
+            </p>
+        </div>
+
     </main>
 
-    
-
     <footer>
-        <p>&copy; 2026 Maya Babu. Built with HTML & CSS for GitHub Pages.</p>
+        <p>&copy; 2026 Maya Babu. Built with HTML &amp; CSS for GitHub Pages.</p>
     </footer>
 
 </body>
+
 </html>
