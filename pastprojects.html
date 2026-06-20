@@ -109,15 +109,27 @@
             text-decoration: underline;
         }
 
-        .project-card {
+        .project-card-left {
             background: white;
             padding: 2rem;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
             margin-bottom: 2rem;
+            margin-left: 0px;
         }
 
-        .project-card h2 {
+        .project-card-right {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            margin-bottom: 2rem;
+            margin-left: 50px;
+            text-align: right;
+        }
+
+        .project-card-left h2,
+        .project-card-right h2 {
             color: var(--primary-color);
             margin-bottom: 1rem;
         }
@@ -166,7 +178,7 @@
             View My GitHub Profile →
         </a>
 
-        <div class="project-card">
+        <div class="project-card-left">
             <h2>Movies and Actors AI Bot</h2>
 
             <p>
@@ -187,7 +199,7 @@
             </p>
         </div>
 
-         <div class="project-card">
+         <div class="project-card-right">
             <h2>Celebrity Comparing AI Bot</h2>
 
             <p>
