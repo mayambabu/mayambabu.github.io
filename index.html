@@ -1,230 +1,45 @@
-:root {
-            --primary-color: #3b0d11;   /* Deep burgundy */
-            --accent-color: #b91c1c;    /* Rich red */
-            --accent-hover: #991b1b;    /* Darker red */
-            --text-color: #374151;      /* Soft charcoal */
-            --light-bg: #faf7f7;        /* Warm white */
-            --card-bg: #ffffff;
-        }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maya Babu | Software Engineering and Economics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+    <header>
+        <nav>
+            <a href="index.html" class="logo">MayaBabu<span>.dev</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="pastprojects.html">About Me</a></li>
+                <li><a href="pastprojects.html">Resume</a></li>
+                <li><a href="pastprojects.html">Previous Projects</a></li>
+                <li><a href="contactme.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        body {
-            background-color: var(--light-bg);
-            color: var(--text-color);
-            line-height: 1.6;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
+    <main class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Maya!</h1>
+            <h2>Be(Hons)/BCom student, studying Software Engineering and Economics</h2>
+            <p>
+                I bridge the gap between complex technical architecture and market data analysis. 
+                Passionate about building scalable software solutions while leveraging economic insights 
+                to optimize financial systems, data analytics, and strategic decision-making.
+            </p>
+            <div class="cta-buttons">
+                <a href="pastprojects.html" class="btn btn-primary">View My Work</a>
+                <a href="pastprojects.html" class="btn btn-secondary">View CV / Resume</a>
+            </div>
+        </div>
+    </main>
 
-        /* Navigation */
+    <footer>
+        <p>&copy; 2026 Maya Babu. Built with HTML & CSS for GitHub Pages.</p>
+    </footer>
 
-        header {
-            background-color: white;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 1.5rem 2rem;
-        }
-
-        .logo {
-            font-weight: 700;
-            font-size: 1.25rem;
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-
-        .logo span {
-            color: var(--accent-color);
-        }
-
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 2rem;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--text-color);
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        .nav-links a:hover,
-        .nav-links a.active {
-            color: var(--accent-color);
-        }
-
-        /* Page Content */
-
-        .page-content {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 8rem 2rem 4rem;
-            flex: 1;
-            width: 100%;
-        }
-
-        .page-content h1 {
-            color: var(--primary-color);
-            margin-bottom: 2rem;
-            font-size: 2.5rem;
-        }
-
-        .github-link {
-            display: inline-block;
-            margin-bottom: 2rem;
-            color: var(--accent-color);
-            font-weight: 600;
-            text-decoration: none;
-        }
-
-        .github-link:hover {
-            text-decoration: underline;
-        }
-
-        .project-card-left {
-            background: white;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-            margin-bottom: 2rem;
-            margin-left: 0px;
-        }
-
-        .project-card-right {
-            background: white;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-            margin-bottom: 2rem;
-            margin-left: 50px;
-            text-align: right;
-        }
-
-        .project-card-left h2,
-        .project-card-right h2 {
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-        }
-
-        footer {
-            background-color: var(--primary-color);
-            color: #94a3b8;
-            text-align: center;
-            padding: 1.5rem;
-            margin-top: auto;
-        }
-
-        @media (max-width: 768px) {
-            .nav-links {
-                gap: 1rem;
-            }
-
-            .page-content h1 {
-                font-size: 2rem;
-            }
-        }
-
-        /* Hero / Description Section */
-        .hero {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 8rem 2rem 4rem 2rem; /* Top padding accounts for fixed header */
-            max-width: 900px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .hero-content h1 {
-            font-size: 3rem;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-            line-height: 1.2;
-        }
-
-        .hero-content h2 {
-            font-size: 1.5rem;
-            color: var(--accent-color);
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-        }
-
-        .hero-content p {
-            font-size: 1.15rem;
-            max-width: 700px;
-            margin: 0 auto 2.5rem auto;
-            color: #64748b;
-        }
-
-        /* Call to Action Buttons */
-        .cta-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-        }
-
-        .btn {
-            display: inline-block;
-            text-decoration: none;
-            padding: 0.8rem 1.8rem;
-            border-radius: 6px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-
-        .btn-primary {
-            background-color: var(--accent-color);
-            color: white;
-        }
-
-        .btn-primary:hover {
-            background-color: #1d4ed8;
-        }
-
-        .btn-secondary {
-            border: 2px solid var(--primary-color);
-            color: var(--primary-color);
-        }
-
-        .btn-secondary:hover {
-            background-color: var(--primary-color);
-            color: white;
-        }
-
-        /* Footer */
-        footer {
-            background-color: var(--primary-color);
-            color: #94a3b8;
-            text-align: center;
-            padding: 1.5rem;
-            font-size: 0.9rem;
-            margin-top: auto;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .hero-content h1 { font-size: 2.2rem; }
-            .hero-content h2 { font-size: 1.25rem; }
-            .nav-links { gap: 1rem; }
-            .cta-buttons { flex-direction: column; }
-        }
+</body>
+</html>
