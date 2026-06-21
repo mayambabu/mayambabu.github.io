@@ -225,8 +225,25 @@
         }
 
         textarea{
-            width: 100%;
+            width: 90%;
             resize: vertical;
+        }
+
+        .button{
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 2px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 14px;
+
+        }
+
+        .button:hover {
+            background-color: var(--accent-hover);
         }
 
         /* Responsive Design */
