@@ -7,14 +7,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Thank You!</h1>
-    <p>Your message has been sent successfully.</p>
-    <p>I will respond to you as soon as possible.</p>
-    <p><a href="contactme.html">Send another message</a></p>
-    <p><a href="index.html">Return to Home</a></p>
-    <p><a href="pastprojects.html">View my past projects</a></p>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">MayaBabu<span>.dev</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pastprojects.html">About Me</a></li>
+                <li><a href="pastprojects.html">Resume</a></li>
+                <li><a href="pastprojects.html">Previous Projects</a></li>
+                <li><a href="contactme.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-     <footer>
+    <main class="page-content">
+
+    <div class="thank-you-container">
+        <h1 class = "thank-you-heading">Thank You!</h1>
+        <p class="thank-you-text">Your message has been sent successfully!</p>
+        <p class="thank-you-text">I will respond to you as soon as possible.</p>
+        <p class="thank-you-links">
+            <a href="contactme.html" class="btn btn-secondary">Send another message</a>
+            <a href="index.html" class="btn btn-secondary">Return to Home</a>
+            <a href="pastprojects.html" class="btn btn-secondary">View my past projects</a>
+        </p>
+    </div>
+
+    </main>
+
+    <footer>
         <p>&copy; 2026 Maya Babu. Built with HTML & CSS for GitHub Pages.</p>
     </footer>
     
